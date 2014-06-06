@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class='no-js' lang='sv'>
+<head>
+<meta charset='utf-8'>
+<title>Sokoban</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<header id="top">
+<h1>Sokoban Game</h1>
+	<!-- Navigeringsmeny -->
+	<nav class="navmenu">
+		<a id="play"        href="sokoban.html">Spela Sokoban</a>
+		<a id="nextVer"    href="#">Nästa version</a>
+		<a id="install"    href="#">Installation</a>
+		<a id="git"     href="http://dbwebb.se/htmlphp/me/kmom02/guide.php">Länk till Github</a>
+		<a id="about"      href="#">Om sokoban</a>
+		<a id="helpButton"     href="#">Hjälp</a>
+	</nav>
+</header>
+
+	<div id="gameContainer">
+
+<!--<h1>Sokoban Game</h1> -->
+		<div id ='sound'></div>
+		</br>
+		<div id="help"></div>
+			
+        <canvas id="myDrawing" width="640" height="512" >
+              <p>Your browser does not support the element HTML5 Canvas.</p>
+        </canvas> 
+		<div id ='finish'></div> 
+			<div id="scoreBoard">
+                <div class="info" id="levelInfo"></div>
+                <div class="info" id="stepsInfo"></div>
+                <div class="info" id="pushesInfo"></div>
+                <div class="info" id="boxsInfo"></div>
+            </div>
+			<br/>
+            <div id="levelControl">
+			<div class = "hidden">
+			    <div class="button" onClick="gotoNextLevel()">Nästa Lager</div>
+                <div class="button" onClick="gotoPrevLevel()">Föregående Lager</div>
+			</div>	
+				<div class="button" onClick="gotoFirstLevel()">Starta om</div>
+                <div class="button" onClick="undoMove()">Ångra förflyttning</div>
+                <div class="button" onClick="resetLevel()">Återställ lagret</div>
+              <!--  <div class ='button' id = 'helpButton' >Hjälp</div> -->
+            </div>
+       
+    
+    </div>
+<script type="text/javascript" src= "http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="leveldata.js"></script>
+<script type="text/javascript" src="texter.js"></script>
+</body >
+</html>

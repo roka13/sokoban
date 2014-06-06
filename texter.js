@@ -1,0 +1,16 @@
+
+var helpText = "<center><h3>Sokoban</h3></center>" +
+"<p>Förflyttning : Använd Piltangenterna<br/>"+
+" För att komma till nästa lager måste du lösa detta<br/>"+
+ "lager först och gå till den stängda dörren</p>";   
+
+var aboutTxt = " <center><h3>Om Sokoban</h3></center>" +
+"<p>Det här är ett klassiskt spel som i sin grundtanke är ganska enkel. Det gäller att förflytta ett antal lådor genom att knuffa dem till förutbestämda slutdestinationer. Man kan bygga upp spelplanen på ett mer eller mindre komplicerat sätt vilket medför att ett visst mått av logiskt tänkande måste till för att klara av uppgiften. I denna version finns åtta spelplaner där den första är mycket enkel. Svårighetsgraden ökar därefter för varje bana man klarar av. För att komma vidare till nästa nivå måste samtliga boxar vara placerade rätt. Därefter går man vidare via en stängd dörr som öppnas när man närmar sig till nästa nivå. Det finns möjlighet att ångra sina drag i varje nivå men inte mellan nivåerna.</p>" +  
+" Det finns ett stort antal varianter av sokoban. De flesta har ungefär samma koduppbyggnad och struktur med lite varianter på lagrens uppbyggnad. Många utger sig för att vara nedladdningsbara och fungera bra. Så är inte alltid fallet. I många fall kan man bara röra sig i en bana utan att komma vidare. Länkningarna som de visar upp på sina hemsidor fungerar inte i många fall. Det finns givetvis även många som är betydligt bättre utvecklade än mitt förslag. Emellertid har jag ännu inte hittat någon som implementerat ljudeffekter och ide´n om en dörr som måste öppnas för att komma till nästa nivå. Det verkar inte heller finnas någon med öppna portar som bara spelaren kan passera genom men inte boxarna.  Jag har inte heller hittat någon som utnyttjar JQuery i systemuppbyggnaden.</p> ";
+
+ var installTxt =" <center><h3>Installation av Sokoban</h3></center>" +
+ "<p>Vill man ladda hem och spela på sin egen dator finns koden på github. Lägg upp samtliga nedladdade delar i en gemensam katalog och starta med att öppna sokoban.html " +
+"<p> För att bygga egna banor används filen leveldata.js. I den finns även anvisningar om hur man går till väga. Öppna filen i en editor och följ anvisningarna och genom att titta på strukturen. Man kan även söka upp ett stort antal nivåer (hundratals) på internet. De måste emellertid anpassas till rätt struktur innan de införlivas i samlingen. Glöm inte att lägga in en stängd dörr i spelplanen om man skall komma vidare till nästa plan. Det finns normalt inget annat sätt att komma vidare om man inte modifierar koden i  main.js på rad 316. Där finns möjlighet att kommentera bort ett anrop till functionen hideCheat() som gömmer två knappar för att gå till nästa respektive föregående bana.</p>"
+   
+var nextVersion =" <center><h3>Tänkta Uppdateringar</h3></center>" + 
+"En ide till framtida utveckling av spelet kan vara  att införa flera våningsplan i varje lager. Där hemliga falluckor samt hiss för att förflytta boxarna mellan planen, gör det hur komplicerat som helst att lösa uppgiften. Det bör även gå att spara aktuellt läge för att avbryta och fortsätta vid ett senare tillfälle från där man slutade. Det som ligger närmast är att utveckla en baneditor som där man med musens hjälp drar in väggar med flera element från en panel till spelplanen och sedan spara in den i leveldata.js  ";  

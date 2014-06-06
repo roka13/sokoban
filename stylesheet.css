@@ -1,0 +1,172 @@
+body{	background:#EFEFEF;
+}
+
+            #gameContainer{
+                width: 800px;
+				background:#EFEFEF;
+                overflow: auto;
+                 margin-left: auto;
+                 text-align: center;
+		        }
+            
+            #myDrawing{
+                margin-top: 10px;
+                margin-left: auto;
+			     }
+            
+            #scoreBoard{
+                height: 30px;
+                margin-top: 5px;
+                text-align: center;
+                color: blue;
+				margin-left: 160px;
+				width: 450px;
+				background:#989898;
+				border-radius: 10px;
+                 }
+            
+            #levelControl{
+                height: 60px;
+                overflow: auto;
+                margin-left: 150px;
+                        }
+            
+            div.info{
+                float: left;
+                margin-top: 10px;
+                margin-left: 10px;
+                display: inline-block;
+            }
+         
+            div.button{
+                margin-top: 5px;
+                margin-left: 15px;
+                padding: 10px;
+				color: blue;
+				height:35px;
+				width:80px;
+				background:#989898;
+				border-radius: 10px;
+              float: left;
+               }
+            
+            div.button:hover{
+                background-color:#96D8F7;
+            }
+            
+         #help{
+				padding: 4px;
+				position: relative;
+				display: none;
+				border-radius: 10px;
+	        }
+            
+      			
+			#finish{
+                padding: 4px;
+               position: relative;
+				left: 450px;
+				top:400px;
+				display: none;
+				border-radius: 10px;
+			    }
+    
+
+
+/** --------------------------------------------------------------
+  *
+ */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,
+figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,
+time,mark,audio,video{margin:0;padding:0;border:0;font-size:100.01%;font:inherit;vertical-align:baseline;}
+
+
+
+/** --------------------------------------------------------------
+ * HTML5 elements.
+ *
+ */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
+audio:not([controls]){display:none;}
+[hidden]{display:none;}
+
+
+/** --------------------------------------------------------------
+ * Typography.
+ * 
+ */
+@font-family-helvetica: Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-monospace: monospace;
+@magic-number: 22px; /* 16px - 100%/1.375 */
+body{color:#222;font:100.01%/1.375 @font-family-helvetica;}
+b,strong{font-weight:bold;}
+
+i,em{font-style:italic;}
+pre,code{font:1em/1.375 @font-family-monospace;}
+
+/* headers */
+h1{font-size:2.375em;line-height:1.1579;margin-bottom:@magic-number;}
+h2{font-size:2.2em;line-height:1.13;margin-bottom:@magic-number;}
+h3{font-size:1.7em;line-height:1.13;margin-bottom:@magic-number;}
+h4{font-size:1.0em;line-height:1.0;margin-bottom:@magic-number;}
+p{font-size:1.0em;line-height:1.0;margin-bottom:@magic-number;}
+
+
+
+/** --------------------------------------------------------------
+ * Colors.
+ * 
+ */
+@black:#000;
+@blue:#049cdb;
+@green:#46a546;
+@red:#9d261d;
+@yellow:#ffc40d;
+@orange:#f89406;
+@grey:#555;
+@greyLight:#999;
+@greyLighter:#eee;
+
+.black{color:@black;}
+.blue{color:@blue;}
+.green{color:@green;}
+.red{color:@red;}
+.yellow{color:@yellow;}
+.orange{color:@orange;}
+
+
+/** --------------------------------------------------------------
+ * Page layout.
+ * 
+ */
+body{max-width:800px;
+	margin:8px auto;}
+
+/* navigation menu
+-------------------------------------------------------- 
+*/
+	
+nav.navmenu   {
+		padding: 0.2em 1em 0 1em;
+		background:#989898; 
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;  
+	       }
+		   	   
+nav.navmenu a   {
+		padding: 0.3em 1em 0 1em;
+		color: blue; 
+		font-family: Tahoma, Geneva, sans-serif;
+		text-decoration:none;
+		}
+		
+nav.navmenu a:link    { }
+nav.navmenu a:visited { }
+nav.navmenu a:hover {   background-color:#96D8F7;}
+
+
