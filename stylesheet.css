@@ -65,8 +65,8 @@ body{	background:#EFEFEF;
 			#finish{
                 padding: 4px;
                position: relative;
-				left: 450px;
-				top:400px;
+				//left: 450px;
+				//top:400px;
 				display: none;
 				border-radius: 10px;
 			    }
