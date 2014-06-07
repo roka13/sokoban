@@ -62,13 +62,11 @@ body{	background:#EFEFEF;
 	        }
             
       			
-			#finish{
-                padding: 4px;
-               position: relative;
-				//left: 450px;
-				//top:400px;
-				display: none;
-				border-radius: 10px;
+		#finish{
+			padding: 4px;
+			position: relative;
+			display: none;
+			border-radius: 10px;
 			    }
     
 
@@ -90,7 +88,7 @@ time,mark,audio,video{margin:0;padding:0;border:0;font-size:100.01%;font:inherit
  *
  */
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
-audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
+audio,canvas,video{display:inline-block;}
 audio:not([controls]){display:none;}
 [hidden]{display:none;}
 
@@ -99,49 +97,23 @@ audio:not([controls]){display:none;}
  * Typography.
  * 
  */
-@font-family-helvetica: Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-monospace: monospace;
-@magic-number: 22px; /* 16px - 100%/1.375 */
-body{color:#222;font:100.01%/1.375 @font-family-helvetica;}
+
 b,strong{font-weight:bold;}
 
 i,em{font-style:italic;}
-pre,code{font:1em/1.375 @font-family-monospace;}
+
 
 /* headers */
-h1{font-size:2.375em;line-height:1.1579;margin-bottom:@magic-number;}
-h2{font-size:2.2em;line-height:1.13;margin-bottom:@magic-number;}
-h3{font-size:1.7em;line-height:1.13;margin-bottom:@magic-number;}
-h4{font-size:1.0em;line-height:1.0;margin-bottom:@magic-number;}
-p{font-size:1.0em;line-height:1.0;margin-bottom:@magic-number;}
+h1{font-size:2.375em;line-height:1.1579;}
+h2{font-size:2.2em;line-height:1.13;}
+h3{font-size:1.7em;line-height:1.13;}
+h4{font-size:1.0em;line-height:1.0;}
+p{font-size:1.0em;line-height:1.0;}
 
-
-
-/** --------------------------------------------------------------
- * Colors.
- * 
- */
-@black:#000;
-@blue:#049cdb;
-@green:#46a546;
-@red:#9d261d;
-@yellow:#ffc40d;
-@orange:#f89406;
-@grey:#555;
-@greyLight:#999;
-@greyLighter:#eee;
-
-.black{color:@black;}
-.blue{color:@blue;}
-.green{color:@green;}
-.red{color:@red;}
-.yellow{color:@yellow;}
-.orange{color:@orange;}
 
 
 /** --------------------------------------------------------------
  * Page layout.
- * 
  */
 body{max-width:800px;
 	margin:8px auto;}
